@@ -14,12 +14,39 @@
     <style>
       p    {color:rgb(3, 132, 3);}
       h4   {color:maroon}
-
+      .cityimages{
+        display: flex;
+      }
+      .cityaimages-thumb{
+        display:flex;
+      }
+      .myform{
+    background:rgb(238, 233, 160);
+    padding: 25px;
+}
     </style>
 </head>
 <body>
-  <h1>Visit cities with Sai Ramya Gajula</h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navigation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" id="menu-item">
+            <a class="nav-link" href="./basic.html">Basic HTML</a>
+          </li>
+          <li class="nav-item" id="menu-item">
+            <a class="nav-link" href="./advanced.html">Advanced HTML</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
+  <h1>Visit cities with Sai Ramya Gajula</h1>
     <div class="row" style="color:red">
         <div class="col-sm-2">G</div>
         <div class="col-sm-2">A</div>
@@ -35,11 +62,138 @@
         <div class="col-md">Udaipur</div>
         <div class="col-md">Los Angeles</div>
         <div class="col-md">Amsterdam</div>
-    </div>   
-</div>
-<br>
-<h4>Row with cities breaks first</h4>
+    </div>  
+    
+    <h4>Row with cities breaks first</h4>
     <p>As the size of the browser window gradually reduces, it reaches a point where there isn't enough horizontal space to accommodate the full-width "col-md" divs for the city names. When this happens, the city name divs start to stack vertically, causing the row to break.
       On the other hand, the "col-sm-2" divs for the letters are designed to be more flexible and can continue to fit within the available space on smaller screens, so they break later.</p>
+      <div class="row">
+        <div class="cityimages">
+      <img src="city1.jpeg" class="img-fluid" alt="Goa" style="height: 250px;width: 300px;">
+        <img src="city2.jpeg" class="img-fluid" alt="Amritsar" style="height: 250px;width: 300px;">
+        <img src="city3.jpeg" class="img-fluid" alt="Jaipur" style="height: 250px;width: 300px;"> 
+      </div>     
+    </div>
+    <br>
+    <div class="row">
+      <div class="cityaimages-thumb">
+      <img src="city1.jpeg" class="img-thumbnail" alt="Goa" style="height: 250px;width: 300px;">
+      <img src="city2.jpeg" class="img-thumbnail" alt="Amritsar" style="height: 250px;width: 300px;">
+      <img src="city3.jpeg" class="img-thumbnail" alt="Jaipur" style="height: 250px;width: 300px;">
+    </div>
+  </div>
+<br>
+
+<h1 style="text-align: center;">TABLE</h1>
+<div class="row">
+<table class="table table-striped table-hover table-bordered">
+  <caption>Table containing list of Letters, Cities, Rivers, and Trees</caption>
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Letter</th>
+      <th scope="col">City</th>
+      <th scope="col">River</th>
+      <th scope="col">Tree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope= "row">1</th>
+      <td>G</td>
+      <td>Goa</td>
+      <td>Ganges River</td>
+      <td>Golden Rain Tree</td>
+    </tr>
+    <tr class="table-danger">
+      <th scope= "row">2</th>
+      <td>A</td>
+      <td>Amritsar</td>
+      <td>Amur River</td>
+      <td>Almond Tree</td>
+    </tr>
+    <tr>
+      <th scope= "row">3</th>
+      <td>J</td>
+      <td>Jaipur</td>
+      <td>Jordan River</td>
+      <td>Jackfruit Tree</td>
+    </tr>
+    <tr class="table-danger">
+      <th scope="row">4</th>
+      <td>U</td>
+      <td>Udaipur</td>
+      <td>Ural River</td>
+      <td>Upland Cotton</td>
+    </tr>
+    <tr>
+      <th scope= "row">5</th>
+      <td>L</td>
+      <td>Los Angeles</td>
+      <td>Loire River</td>
+      <td>Linden Tree</td>
+    </tr>
+    <tr class="table-danger">
+      <th scope="row">6</th>
+      <td>A</td>
+      <td>Amsterdam</td>
+      <td>Alzette River</td>
+      <td>Apple Tree</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="row">
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h2">Navbar</span>
+  </nav>
+  <div class="btn-toolbar" role="toolbar" aria-label="Button toolbar">
+  <div class="btn-group" role="group" aria-label="First group">
+    <button type="button" class="btn btn-success">G</button>
+    <button type="button" class="btn btn-success">A</button>
+    <button type="button" class="btn btn-success">J</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-warning">U</button>
+    <button type="button" class="btn btn-warning">L</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-danger">A</button>
+  </div>
+</div>
+</div><br>
+
+<div class="row" id="mydropdown"> 
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="./basic.html">Basic HTML</a></li>
+      <li><a class="dropdown-item" href="./advanced.html">Advanced HTML</a></li>
+    </ul>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <form class="myform">
+    <div class="mb-3">
+      <label for="Email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="city" class="form-label">City</label>
+      <input type="text" placeholder="Enter your city" class="form-control" >
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" >
+      <label class="form-check-label" for="Check">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+</div>
 </body>
 </html>
